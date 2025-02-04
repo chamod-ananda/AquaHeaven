@@ -12,3 +12,19 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+.plant-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.plant-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.plant-list li {
+    margin-bottom: 10px;
+}
