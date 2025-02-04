@@ -28,3 +28,18 @@ body {
 .plant-list li {
     margin-bottom: 10px;
 }
+
+.plant-list a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.plant-list a:hover {
+    color:rgb(0, 128, 128);
+    /* background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px; */
+}
