@@ -39,7 +39,7 @@ body {
 }
 
 .plant-list a:hover {
-    color:rgb(0, 128, 128);
+    color:#f85151;
     /* background-color: rgba(255, 255, 255, 0.2);
     border-radius: 5px; */
 }
