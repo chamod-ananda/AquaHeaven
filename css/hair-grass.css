@@ -1,0 +1,94 @@
+table, th, td, tr {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 500px;
+    height: 35px;
+    font-size: 17px;
+}
+
+body {
+    background: linear-gradient(to top, #DFFFD6, #B5EAEA);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.heading {
+    font-weight: 600;
+    text-shadow: 4px 6px 4px #0b6890;
+}
+
+.align-table {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 0 100px;
+    align-items: flex-start;
+}
+
+.desc {
+    max-width: 600px;
+    font-size: 21px;
+    line-height: 24px;
+    font-weight: 500;    
+}
+
+.desc::first-letter {
+    font-size: 25px;
+    color: red;
+    font-weight: 600;
+}
+
+aside {
+    width: 600px;
+    height: 300px;
+}
+
+.image-container-main {
+    display: inline-block;
+    position: relative;
+}
+
+.image-container-main img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.image-container-main:hover {
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+.image-container {
+    display: inline-block;
+    position: relative;
+}
+
+.image-container img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover {
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+.aqua {
+    display: inline-block;
+    position: relative;
+}
+
+.aqua img {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.aqua:hover {
+    transform: scale(1.2);
+    z-index: 1;
+}
