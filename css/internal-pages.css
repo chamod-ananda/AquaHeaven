@@ -4,6 +4,8 @@ table, th, td, tr {
     width: 500px;
     height: 35px;
     font-size: 17px;
+    margin-right: 80px;
+    margin-top: 0;
 }
 
 body {
@@ -22,7 +24,7 @@ body {
     justify-content: space-between;
     padding-right: 0 100px;
     align-items: flex-start;
-}
+} 
 
 .desc {
     max-width: 600px;
