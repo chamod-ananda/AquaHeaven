@@ -1,0 +1,92 @@
+body {
+    background: linear-gradient(to right, #FAEBD7, #CD853F);
+}
+
+#main-topic {
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+#intro {
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 750px;
+}
+
+#desc {
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 750px;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+#care-dig {
+    max-width: 100%;
+    height: auto;
+    margin-left: 400px;
+}
+
+#points {
+    font-size: 20px;
+    margin-left: 600px;
+}
+
+#points li {
+    margin-bottom: 10px;
+}
+
+#points ol li::marker {
+    color: red;
+    font-weight: bold;
+}
+
+#content-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#center-container {
+    max-width: 500px;
+    margin-left: 60px;
+    font-size: 25px;
+}
+
+#plant-topic {
+    font-size: 35px;
+    text-decoration: underline;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#center-container ul li a{
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease-in-out;
+}
+
+#center-container ul li a:hover {
+    color: #ff6600;
+    text-decoration: underline;
+}
+
+#center-container ul li {
+    list-style: none;
+    padding: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#center-container ul li:hover {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.span {
+    color: blue;
+}
+
