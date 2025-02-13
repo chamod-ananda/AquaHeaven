@@ -1,0 +1,67 @@
+body {
+    background: linear-gradient(to bottom, #F7E7CE, #C19A6B);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#main-topic {
+    font-size: 35px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+iframe {
+    width: 700px;
+    height: 400px;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+}
+
+#desc {
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+#intro {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.facts {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 25px;
+}
+
+.FAQ {
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 400px;
+}
+
+.ans {
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 350px;
+    line-height: 30px;
+}
+
+.span {
+    color: red;
+}
+
+.ex {
+    font-size: 20px;
+    font-weight: 500;
+}
