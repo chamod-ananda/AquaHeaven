@@ -1,45 +1,70 @@
+header {
+    background: #27863b;
+    color: #d8ff01;
+    padding: 20px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
 p {
-    font-size: 38px;
+    font-size: 28px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 600;
-    text-align: center;
-    color: #017b52;
+    color: #000000;
     text-shadow: 4px 6px 5px #737671;
 }
 
 body {
     background: linear-gradient(to top, rgb(117, 225, 117), rgb(243, 224, 224));
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    text-align: center;
+    padding: 30px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.video-container video {
+    width: 700px;
+    height: 400px;
+    max-width: 100%;
+    border-radius: 10px;
 }
 
 .plant-list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-}
-
-.plant-list ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.plant-list li {
-    margin-bottom: 10px;
+    max-width: 1000px;
+    margin: auto;
 }
 
 .plant-list a {
+    display: block;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
     text-decoration: none;
-    color: black;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
-    padding: 10px 15px;
-    transition: color 0.3s ease, background-color 0.3s ease;
+    color: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
 .plant-list a:hover {
-    color:#f85151;
-    /* background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 5px; */
+    background: #017b52;
+    color: white;
+    transform: scale(1.05);
 }
