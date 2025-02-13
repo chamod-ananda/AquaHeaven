@@ -1,5 +1,7 @@
 body {
     background: linear-gradient(to right, #FAEBD7, #CD853F);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 #main-topic {
