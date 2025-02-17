@@ -19,18 +19,26 @@ body {
     text-shadow: 4px 6px 4px #0b6890;
 }
 
-.align-table {
+/* .align-table {
     display: flex;
     justify-content: space-between;
     padding-right: 0 100px;
     align-items: flex-start;
-} 
+}  */
+
+table {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 100px;
+}
 
 .desc {
     max-width: 600px;
     font-size: 21px;
     line-height: 24px;
-    font-weight: 500;    
+    font-weight: 500;
+    margin-left: 200px; 
 }
 
 .desc::first-letter {
@@ -40,8 +48,10 @@ body {
 }
 
 aside {
-    width: 600px;
-    height: 300px;
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    right: 0;
 }
 
 .image-container-main {
