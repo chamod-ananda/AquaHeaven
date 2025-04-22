@@ -1,106 +1,102 @@
-table, th, td, tr {
-    border: 1px solid black;
-    border-collapse: collapse;
-    width: 500px;
-    height: 35px;
-    font-size: 17px;
-    margin-right: 80px;
-    margin-top: 0;
+table,
+th,
+td,
+tr {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 500px;
+  height: 35px;
+  font-size: 17px;
+  margin-right: 80px;
+  margin-top: 0;
 }
 
 body {
-    background: linear-gradient(to top, #DFFFD6, #B5EAEA);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  background: linear-gradient(to top, #dfffd6, #b5eaea);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .heading {
-    font-weight: 600;
-    text-shadow: 4px 6px 4px #0b6890;
+  font-weight: 600;
+  text-shadow: 4px 6px 4px #0b6890;
 }
 
-/* .align-table {
-    display: flex;
-    justify-content: space-between;
-    padding-right: 0 100px;
-    align-items: flex-start;
-}  */
-
 table {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-top: 100px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 100px;
 }
 
 .desc {
-    max-width: 600px;
-    font-size: 21px;
-    line-height: 24px;
-    font-weight: 500;
-    margin-left: 200px; 
+  max-width: 600px;
+  font-size: 21px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-left: 200px;
 }
 
 .desc::first-letter {
-    font-size: 25px;
-    color: red;
-    font-weight: 600;
+  font-size: 25px;
+  color: red;
+  font-weight: 600;
 }
 
 aside {
-    width: 800px;
-    height: 500px;
-    position: absolute;
-    right: 0;
+  width: 800px;
+  height: 500px;
+  position: absolute;
+  right: 0;
 }
 
 .image-container-main {
-    display: inline-block;
-    position: relative;
+  display: inline-block;
+  position: relative;
 }
 
 .image-container-main img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    transition: transform 0.3s ease;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
 .image-container-main:hover {
-    transform: scale(1.2);
-    z-index: 1;
+  transform: scale(1.2);
+  z-index: 1;
 }
 
 .image-container {
-    display: inline-block;
-    position: relative;
+  display: inline-block;
+  position: relative;
 }
 
 .image-container img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    transition: transform 0.3s ease;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
 .image-container:hover {
-    transform: scale(1.2);
-    z-index: 1;
+  transform: scale(1.2);
+  z-index: 1;
 }
 
 .aqua {
-    display: inline-block;
-    position: relative;
+  display: inline-block;
+  position: relative;
 }
 
 .aqua img {
-    width: 200px;
-    height: 100px;
-    object-fit: cover;
-    transition: transform 0.3s ease;
+  width: 200px;
+  height: 100px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
 .aqua:hover {
-    transform: scale(1.2);
-    z-index: 1;
+  transform: scale(1.2);
+  z-index: 1;
 }
