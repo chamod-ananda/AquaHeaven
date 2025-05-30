@@ -1,94 +1,175 @@
 body {
-    background: linear-gradient(to right, #FAEBD7, #CD853F);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  background: linear-gradient(to right, #faebd7, #cd853f);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 20px;
+  font-family: "Times New Roman", Times, serif;
 }
 
+/* Main Heading */
 #main-topic {
-    font-size: 40px;
-    font-weight: 600;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
+/* Introduction Text */
 #intro {
-    font-size: 25px;
-    font-weight: 600;
-    font-family: 'Times New Roman', Times, serif;
-    margin-left: 750px;
+  font-size: 25px;
+  font-weight: 600;
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
 }
 
+/* Description */
 #desc {
-    font-size: 20px;
-    font-weight: 300;
-    font-family: 'Times New Roman', Times, serif;
-    margin-left: 750px;
-    max-width: 600px;
-    margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 300;
+  max-width: 600px;
+  margin: 10px auto 20px auto;
+  text-align: center;
 }
 
+/* Care Diagram Image */
 #care-dig {
-    max-width: 100%;
-    height: auto;
-    margin-left: 400px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px auto;
 }
 
+/* Points List */
 #points {
-    font-size: 20px;
-    margin-left: 600px;
+  font-size: 20px;
+  max-width: 600px;
+  margin: 0 auto 20px auto;
 }
 
 #points li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 #points ol li::marker {
-    color: red;
-    font-weight: bold;
+  color: red;
+  font-weight: bold;
 }
 
+/* Content Layout */
 #content-container {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
+/* Center Container */
 #center-container {
-    max-width: 500px;
-    margin-left: 60px;
-    font-size: 25px;
+  max-width: 500px;
+  font-size: 22px;
 }
 
+/* Subheading */
 #plant-topic {
-    font-size: 35px;
-    text-decoration: underline;
-    font-weight: 500;
-    font-family: 'Times New Roman', Times, serif;
+  font-size: 35px;
+  text-decoration: underline;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
-#center-container ul li a{
-    text-decoration: none;
-    color: #007bff;
-    transition: color 0.3s ease-in-out;
-}
-
-#center-container ul li a:hover {
-    color: #ff6600;
-    text-decoration: underline;
+/* List Links */
+#center-container ul {
+  padding-left: 0;
 }
 
 #center-container ul li {
-    list-style: none;
-    padding: 5px;
-    transition: background-color 0.3s ease-in-out;
+  list-style: none;
+  padding: 5px;
+  transition: background-color 0.3s ease-in-out;
 }
 
 #center-container ul li:hover {
-    background-color: #f0f0f0;
-    border-radius: 5px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
 }
 
+#center-container ul li a {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s ease-in-out;
+}
+
+#center-container ul li a:hover {
+  color: #ff6600;
+  text-decoration: underline;
+}
+
+/* Colored Text Span */
 .span {
-    color: blue;
+  color: blue;
 }
 
+/* === Responsive Breakpoints === */
+@media (max-width: 1024px) {
+  #intro,
+  #desc,
+  #points {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  #main-topic {
+    font-size: 32px;
+  }
+
+  #intro {
+    font-size: 22px;
+  }
+
+  #desc,
+  #points {
+    font-size: 18px;
+  }
+
+  #plant-topic {
+    font-size: 28px;
+  }
+
+  #center-container {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  #main-topic {
+    font-size: 28px;
+  }
+
+  #intro {
+    font-size: 20px;
+  }
+
+  #desc,
+  #points {
+    font-size: 16px;
+  }
+
+  #center-container {
+    font-size: 18px;
+  }
+
+  #care-dig {
+    margin: 10px auto;
+  }
+}

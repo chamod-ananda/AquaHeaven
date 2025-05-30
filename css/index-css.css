@@ -1,112 +1,148 @@
+/* Base styles */
 #index {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;   
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* allow wrapping for small screens */
+  padding: 10px;
 }
 
 #logo {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
 }
 
 #page-list {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 li {
-    margin: 0 15px;
-    font-size: 25px;
-    font-weight: 600;
-    font-family: 'Times New Roman', Times, serif;
+  margin: 0 15px;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Times New Roman", Times, serif;
 }
 
 body {
-    background-image: url(/assets/images/my_bg\ img.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  background-image: url(/assets/images/my_bg\ img.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
 }
 
-#main-topic{
-    color: #ffffff;
-    font-size: 55px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 600;
-    text-align: center;
-    text-shadow: 6px 6px 4px brown;
+#main-topic {
+  color: #ffffff;
+  font-size: 55px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 6px 6px 4px brown;
 }
 
 #sub-topic {
-    font-family: "Lora", serif;
-    color: #000000;
-    font-size: 30px;
-    font-family:'Times New Roman', Times, serif;
-    font-weight: 900;
-    text-align: center;
-    /* font-style: italic; */
+  color: #000000;
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 900;
+  text-align: center;
 }
 
 #page-list a {
-    text-decoration: none;
-    color: black;
-    font-size: 23px;
-    font-weight: bold;
-    padding: 10px 15px;
-    transition: color 0.3s ease, background-color 0.3s ease;
+  text-decoration: none;
+  color: black;
+  font-size: 23px;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 #page-list a:hover {
-    color: #ffcc00;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 5px;
+  color: #ffcc00;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
 }
 
-/* footer {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 50px;
+/* Responsive styles */
+@media (max-width: 1023px) {
+  #main-topic {
+    font-size: 45px;
+  }
+
+  #sub-topic {
+    font-size: 25px;
+  }
+
+  li {
+    font-size: 22px;
+    margin: 0 10px;
+  }
+
+  #page-list a {
+    font-size: 20px;
+    padding: 8px 12px;
+  }
 }
 
-.footer-container {
-    display: flex;
-    justify-content: space-around;
+@media (max-width: 767px) {
+  #index {
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
-}
+    gap: 15px;
+  }
 
-.footer-logo img{
+  #logo {
     width: 80px;
     height: 80px;
-}
+  }
 
-.footer-links ul {
-    list-style: none;
-    padding: 0;
-}
+  #page-list {
+    flex-direction: column;
+    align-items: center;
+  }
 
-.footer-links li {
-    margin: 5px 0;
-}
+  li {
+    margin: 10px 0;
+  }
 
-.footer-links a {
-    text-decoration: none;
-    color: white;
+  #main-topic {
+    font-size: 35px;
+  }
+
+  #sub-topic {
+    font-size: 20px;
+  }
+
+  #page-list a {
     font-size: 18px;
+    padding: 6px 10px;
+  }
 }
 
-.footer-links:hover {
-    color: #ffcc00;
-}
+@media (max-width: 480px) {
+  #main-topic {
+    font-size: 28px;
+  }
 
-.footer-copy {
-    margin-top: 20px;
-    font-size: 14px;
-} */
+  #sub-topic {
+    font-size: 18px;
+  }
+
+  #logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  #page-list a {
+    font-size: 16px;
+    padding: 5px 8px;
+  }
+}

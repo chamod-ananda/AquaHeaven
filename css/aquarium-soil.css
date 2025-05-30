@@ -1,69 +1,161 @@
 body {
-    background: linear-gradient(to bottom, #F7E7CE, #C19A6B);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  background: linear-gradient(to bottom, #f7e7ce, #c19a6b);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
 }
 
+/* Main Heading */
 #main-topic {
-    font-size: 35px;
-    font-weight: 600;
-    font-family: 'Times New Roman', Times, serif;
+  font-size: 35px;
+  font-weight: 600;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  margin: 20px;
 }
 
+/* Flex container */
 #container {
-    display: flex;
-    align-items: center;
-    gap: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 20px;
 }
 
+/* Video Frame */
 iframe {
-    width: 700px;
-    height: 400px;
+  width: 700px;
+  height: 400px;
+  max-width: 100%;
 }
 
-img {
-    width: 300px;
-    height: 300px;
+/* Image Styles */
+img,
+.img-2 {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  max-width: 100%;
 }
 
+/* Descriptions and Text */
 #desc {
-    font-size: 20px;
-    font-weight: 600;
-    font-style: italic;
+  font-size: 20px;
+  font-weight: 600;
+  font-style: italic;
+  margin: 10px 20px;
 }
 
 .facts {
-    font-size: 20px;
-    font-weight: 500;
-    font-family: 'Times New Roman', Times, serif;
-    line-height: 25px;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 25px;
+  margin: 20px;
 }
 
+/* FAQ Section */
 .FAQ {
-    font-size: 25px;
-    font-weight: 600;
-    margin-left: 400px;
+  font-size: 25px;
+  font-weight: 600;
+  margin: 40px auto 20px auto;
+  text-align: center;
 }
 
+/* Answers */
 .ans {
-    font-size: 20px;
-    font-weight: 500;
-    float: right;
-    margin-right: 100px;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 10px 20px;
+  text-align: right;
 }
 
-.img-2 {
-    width: 300px;
-    height: 300px;
-}
-
+/* List inside Answers */
 .ans-2 li {
-    font-size: 20px;
-    line-height: 20px;
-    margin-left: 350px;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 10px 20px;
 }
 
+/* Extra Explanation */
 .ex {
+  font-size: 20px;
+  margin: 20px;
+}
+
+/* ======================== */
+/* === Responsive Design === */
+/* ======================== */
+
+@media (max-width: 1024px) {
+  iframe {
+    width: 90%;
+    height: 350px;
+  }
+
+  .FAQ {
+    font-size: 22px;
+    margin-left: 0;
+  }
+
+  .ans {
+    text-align: left;
+    margin-right: 20px;
+  }
+
+  .ans-2 li,
+  .ex {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  iframe {
+    height: 300px;
+  }
+
+  #main-topic {
+    font-size: 28px;
+  }
+
+  #desc,
+  .facts,
+  .ans,
+  .ans-2 li,
+  .ex {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  #main-topic {
+    font-size: 24px;
+  }
+
+  iframe {
+    height: 220px;
+  }
+
+  img,
+  .img-2 {
+    width: 100%;
+    height: auto;
+  }
+
+  .FAQ {
     font-size: 20px;
-    margin-left: 350px;
+  }
+
+  .ans,
+  .ans-2 li,
+  .ex,
+  .facts,
+  #desc {
+    font-size: 16px;
+    margin: 10px 15px;
+    text-align: left;
+  }
 }
